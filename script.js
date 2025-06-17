@@ -1,5 +1,12 @@
 function minDate(dates) {
   //write you code here
+	const sorteDates= [...dates];
+
+	sorteDates.sort((a,b))=>{
+		return a.localeCompare(b);
+	});
+
+	return sorteDates[0];
 }
 
 // Do not change the code
